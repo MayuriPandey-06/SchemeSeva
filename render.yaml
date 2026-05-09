@@ -17,8 +17,9 @@ services:
         sync: false
 
   # Frontend Service
-  - type: static
+  - type: web
     name: schemeseva-web
+    env: static
     rootDir: frontend
     buildCommand: npm install; npm run build
     staticPublishDir: dist
