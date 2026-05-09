@@ -22,7 +22,7 @@ services:
     env: static
     rootDir: frontend
     buildCommand: npm install; npm run build
-    staticPublishDir: dist
+    publishDir: dist
     envVars:
       - key: VITE_SUPABASE_URL
         sync: false
